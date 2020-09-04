@@ -1,0 +1,16 @@
+.jumbotron {
+    background:
+        linear-gradient(rgba(42, 38, 61, 0.82),
+            rgba(42, 38, 61, 0.82)),
+        url(https://e-bali.net/wp-content/uploads/2017/09/E-Bali-Background.jpg);
+    background-size: cover;
+    text-align: center;
+}
+
+#skill {
+    padding: 5% 10%;
+}
+
+.box-content {
+    padding: 5% 5% 10%;
+}
