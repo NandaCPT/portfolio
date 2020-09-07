@@ -19,6 +19,10 @@ h6 {
   font-size: 1rem;
 }
 
+figure {
+  text-align: center;
+}
+
 .modal-hover-opacity {
   opacity: 1;
   filter: alpha(opacity=100);
