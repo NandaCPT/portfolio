@@ -11,50 +11,117 @@
 </head>
 
 <body class="mt-1">
-  <div class="container-fluid">
+  <!-- Header Start -->
+  <header>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container">
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Skill</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Project</a>
-            </li>
-          </ul>
-        </div>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="https://img.icons8.com/ios/452/about.png" width="30" class="d-inline-block align-top" alt=""
+          loading="lazy">
+        Nanda Cahaya Putra
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Tentang Saya</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Keahlian</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Proyek</a>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-link" data-toggle="modal" data-target="#contact" role="button">
+              Kontak
+            </button>
+          </li>
+        </ul>
       </div>
     </nav>
 
+  </header>
+  <!-- Header End -->
+
+  <!-- Contact -->
+  <div class="modal fade" id="contact">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Kontak</h4>
+          <button type="button" class="close" data-dismiss="modal">
+            &times;
+          </button>
+        </div>
+
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-2 text-center">
+              <span class="fa fa-whatsapp"></span>
+            </div>
+            <div class="col">
+              <p class="card-text">0851-5500-1211</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 text-center">
+              <span class="fa fa-envelope-o"></span>
+            </div>
+            <div class="col">
+              <p class="card-text">nandacahayap@gmail.com</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-2 text-center">
+              <span class="fab fa-linkedin"></span>
+            </div>
+            <div class="col">
+              <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/nandacpt" role="button">Nanda Cahaya
+                Putra</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-dismiss="modal">
+            Tutup
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
     <!-- Jumbotron -->
     <div class="jumbotron">
       <div class="container text-center">
         <img src="img/profile.jpeg" width="15%" class="rounded-circle img-thumbnail" />
         <h1 class="display-4 text-light">Nanda Cahaya Putra</h1>
         <p class="lead text-white">Web Developer</p>
+        <a class="btn btn-info" target="_blank"
+          href="https://drive.google.com/file/d/1JZMYPkZGZ2musGfLF4I2KZu7z4dgHWJD/view?usp=sharing">Lihat CV</a>
       </div>
     </div>
 
     <!-- About -->
-    <section id="about" class="about">
+    <section id="about">
       <div class="card d-flex align-items-center">
         <div class="row d-flex align-items-center">
-          <div class="col-md-4">
+          <div class="col-md-4 pl-5">
             <img src="img/profile.svg" class="img-fluid" width="50%" />
           </div>
           <div class="col">
             <div class="card-body">
-              <h4 class="card-title">About Me</h4>
+              <h4 class="card-title">Tentang Saya</h4>
               <p class="card-text text-justify">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Dignissimos porro doloribus facere id, adipisci vero! Quasi
-                praesentium numquam aliquid repudiandae a necessitatibus porro
-                provident beatae qui dicta esse, voluptas cumque.
+                Perkenalkan, saya Nanda Cahaya Putra. Saya merupakan salah satu lulusan dari Program Studi Informatika
+                di Universitas Pembangunan Nasional Veteran Jakarta tahun 2020 dengan nilai IPK terakhir 3.76 dalam
+                skala 4.00. Berikut ini merupakan portfolio saya :)
               </p>
             </div>
           </div>
@@ -66,7 +133,7 @@
     <section id="skill" class="skill">
       <div class="card-body">
         <div class="col">
-          <h4 class="display-4 bg-light text-dark text-center">My Skills</h4>
+          <h4 class="display-4 bg-light text-dark text-center">Keahlian Saya</h4>
         </div>
       </div>
       <div class="container">
@@ -178,26 +245,29 @@
 
       <div class="container">
         <div class="card modal_exp">
+          <div class="card-header">
+            <h4 class="display-5 text-dark text-justify">
+              1. [Mini Project] Toko Helm
+            </h4>
+          </div>
           <div class="row">
             <div class="col-md-4 pt-4 pl-4">
               <img class="img-thumbnail" width="100%" src="img/logo.png" alt="tokohelm" />
             </div>
             <div class="col">
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint velit voluptas
-                  soluta reprehenderit maiores eius nulla blanditiis ducimus! Molestias excepturi quae sapiente ex
-                  nulla, in quasi pariatur ipsa mollitia accusamus?</p>
+                <p class="card-text">Ini adalah aplikasi pertama yang saya buat untuk menyelesaikan salah satu tugas
+                  matakuliah di kampus. Aplikasi ini menggunakan bahasa pemrograman PHP native untuk backend, database
+                  MySQL dan
+                  bootstrap untuk UI nya</p>
               </div>
             </div>
-          </div>
-          <div class="row">
-            <h6 class="lead card-body">Images</h6>
           </div>
           <div class="row">
             <h6 class="lead card-body">Fitur User</h6>
           </div>
           <div class="row pl-5">
-            <div class="col-md-4 pb-5">
+            <div class="col-md-4">
               <div class="container1">
                 <figure>
                   <img src="img/tokohelm/1.JPG" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
@@ -220,7 +290,7 @@
             <h6 class="lead card-body">Fitur Admin</h6>
           </div>
           <div class="row pl-5">
-            <div class="col-md-4 pb-5">
+            <div class="col-md-4">
               <div class="container1">
                 <figure>
                   <img src="img/tokohelm/3.JPG" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
@@ -243,16 +313,16 @@
                 <figure>
                   <img src="img/tokohelm/5.JPG" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
                     class="modal-hover-opacity">
-                  <figcaption>3.Add Product</figcaption>
+                  <figcaption>3.Tambah Produk</figcaption>
                 </figure>
               </div>
             </div>
-            <div class="col-md-4 pb-4">
+            <div class="col-md-4">
               <div class="container1">
                 <figure>
                   <img src="img/tokohelm/6.JPG" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
                     class="modal-hover-opacity">
-                  <figcaption>4.Edit Product</figcaption>
+                  <figcaption>4.Edit Produk</figcaption>
                 </figure>
               </div>
             </div>
@@ -261,7 +331,7 @@
                 <figure>
                   <img src="img/tokohelm/8.JPG" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
                     class="modal-hover-opacity">
-                  <figcaption>5.Add Image</figcaption>
+                  <figcaption>5.Upload Gambar</figcaption>
                 </figure>
               </div>
             </div>
@@ -270,7 +340,7 @@
                 <figure>
                   <img src="img/tokohelm/9.JPG" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
                     class="modal-hover-opacity">
-                  <figcaption>6.Orders</figcaption>
+                  <figcaption>6.Form Pesanan</figcaption>
                 </figure>
               </div>
             </div>
@@ -278,30 +348,30 @@
 
         </div>
 
-        <div class="card mt-3">
+        <div class="card mt-3 modal_exp">
+          <div class="card-header">
+            <h4 class="display-5 text-dark text-justify">
+              2. [Project] Penomoran Surat Otomatis
+            </h4>
+          </div>
           <div class="row">
             <div class="col-md-4 pt-4 pl-4">
               <img class="img-thumbnail" width="100%" src="img/logo2.JPG" alt="Arsip" />
             </div>
             <div class="col">
               <div class="card-body">
-                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint velit voluptas
-                  soluta reprehenderit maiores eius nulla blanditiis ducimus! Molestias excepturi quae sapiente ex
-                  nulla, in quasi pariatur ipsa mollitia accusamus?</p>
-                <button class="btn btn-outline-dark" data-toggle="modal" data-target="#arsip">
-                  Detail
-                </button>
+                <p class="card-text">Ini merupakan aplikasi yang kami bangun saat menjalani program magang di Badan
+                  Karantina Pertanian. Masalah yang diangkat yaitu dari penomoran surat yang masih manual menggunakan
+                  Ms. Excell. Aplikasi ini menggunakan PHP native untuk backend, database MySQL dan bootstrap untuk UI
+                  nya.</p>
               </div>
             </div>
           </div>
-          <div class="row">
-            <h6 class="lead card-body">Images</h6>
-          </div>
-          <div class="row">
+          <div class="row text-justify">
             <h6 class="lead card-body">Fitur</h6>
           </div>
           <div class="row pl-5">
-            <div class="col-md-4 pb-5">
+            <div class="col-md-4">
               <div class="container1">
                 <figure>
                   <img src="img/arsip/1.JPG" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
@@ -328,7 +398,7 @@
                 </figure>
               </div>
             </div>
-            <div class="col-md-4 pb-4">
+            <div class="col-md-4">
               <div class="container1">
                 <figure>
                   <img src="img/arsip/4.JPG" style="max-width:100%;cursor:pointer" onclick="onClick(this)"
@@ -356,34 +426,49 @@
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="card mt-3">
-            <div class="row">
-              <div class="col-md-4 pt-4 pl-4">
-                <img class="img-thumbnail" width="100%" src="img/logo3.png" alt="Movie&Game Review" />
-              </div>
-              <div class="col">
-                <div class="card-body">
-                  <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint velit voluptas
-                    soluta reprehenderit maiores eius nulla blanditiis ducimus! Molestias excepturi quae sapiente ex
-                    nulla, in quasi pariatur ipsa mollitia accusamus?</p>
-                  <button class="btn btn-outline-dark" data-toggle="modal" data-target="#movie">
-                    Detail
-                  </button>
-                </div>
-              </div>
-            </div>
+        <div class="card mt-3">
+          <div class="card-header">
+            <h4 class="display-5 text-dark text-justify">
+              3. [Mini Project] Review Film dan Game
+            </h4>
           </div>
-          <div id="modal01" class="modal" onclick="this.style.display='none'">
-            <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-            <div class="modal-content">
-              <img id="img01" style="max-width:100%">
+          <div class="row">
+            <div class="col-md-4 pt-4 pl-4">
+              <img class="img-thumbnail" width="100%" src="img/logo3.png" alt="Movie&Game Review" />
+            </div>
+            <div class="col">
+              <div class="card-body">
+                <p class="card-text">Aplikasi yang dibangun untuk menyelesaikan Final Project bootcamp di Sanbercode.
+                  Aplikasi ini dibangun menggunakan React Js dan material UI. Aplikasi ini sudah di deploy menggunakan
+                  netlify dan dapat dijalankan dengan menekan tombol demo.</p>
+                <a class="btn btn-primary" target="_blank" href="https://musing-dubinsky-e98d98.netlify.app/"
+                  role="button">Demo</a>
+              </div>
             </div>
           </div>
         </div>
+        <div id="modal01" class="modal" onclick="this.style.display='none'">
+          <span class="close">&times;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+          <div class="modal-content">
+            <img id="img01" style="max-width:100%">
+          </div>
+        </div>
       </div>
-    </section>
   </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="page-footer font-small">
+    <div class="footer-copyright text-center py-3">
+      <p> Made with <i class="fas fa-mug-hot"></i> by Nanda Cahaya Putra</p>
+      <p>Powered by <span class="fab fa-bootstrap"></span> </p>
+    </div>
+  </footer>
+  <!-- Footer -->
+  </div>
+
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -400,6 +485,7 @@
       document.getElementById("modal01").style.display = "block";
     }
   </script>
+  <script src="https://kit.fontawesome.com/521d51b5f9.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
