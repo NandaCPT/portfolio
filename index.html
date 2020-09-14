@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body class="mt-1">
@@ -100,45 +101,45 @@
     <!-- Jumbotron -->
     <div class="jumbotron mt-5">
       <div class="container text-center">
-        <img src="img/profile.jpeg" width="15%" class="rounded-circle img-thumbnail" />
-        <h1 class="display-4 text-light">Nanda Cahaya Putra</h1>
-        <p class="lead text-white">Web Developer</p>
-        <a class="btn btn-info" target="_blank"
-          href="https://drive.google.com/file/d/1JZMYPkZGZ2musGfLF4I2KZu7z4dgHWJD/view?usp=sharing">Lihat CV</a>
+        <img src="img/profile.jpeg" class="rounded-circle img-thumbnail" />
+        <div data-aos="fade-right" data-aos-duration="1500"><h1 class="display-4 text-light">Nanda Cahaya Putra</h1></div>
+        <div data-aos="fade-right" data-aos-duration="2000"><p class="lead text-white">Web Developer</p></div>
+        <div data-aos="fade-right" data-aos-duration="2500"><a class="btn btn-info" target="_blank"
+          href="https://drive.google.com/file/d/1JZMYPkZGZ2musGfLF4I2KZu7z4dgHWJD/view?usp=sharing">Lihat CV</a></div>
       </div>
     </div>
 
     <!-- About -->
     <section id="about">
-      <div class="card d-flex align-items-center">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-4 pl-5">
-            <img src="img/profile.svg" class="img-fluid" width="50%" />
-          </div>
-          <div class="col">
-            <div class="card-body">
-              <h4 class="card-title">Tentang Saya</h4>
-              <p class="card-text text-justify">
-                Perkenalkan, saya Nanda Cahaya Putra. Saya merupakan salah satu lulusan dari Program Studi Informatika
-                di Universitas Pembangunan Nasional Veteran Jakarta tahun 2020 dengan nilai IPK terakhir 3.76 dalam
-                skala 4.00. Berikut ini merupakan portfolio saya :)
-              </p>
+        <div class="card d-flex align-items-center">
+          <div class="row d-flex align-items-center">
+            <div class="col-md-4 pl-5" data-aos="fade-up" data-aos-duration="2000">
+              <img src="img/profile.svg" class="img-fluid" width="50%" />
+            </div>
+            <div class="col">
+              <div class="card-body" data-aos="fade-right" data-aos-delay="100" data-aos-duration="2000">
+                <h4 class="card-title">Tentang Saya</h4>
+                <p class="card-text text-justify">
+                  Perkenalkan, saya Nanda Cahaya Putra. Saya merupakan salah satu lulusan dari Program Studi Informatika
+                  di Universitas Pembangunan Nasional Veteran Jakarta tahun 2020 dengan nilai IPK terakhir 3.76 dalam
+                  skala 4.00. Berikut ini merupakan portfolio saya :)
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Skill -->
     <section id="skill" class="skill">
-      <div class="card-body">
+      <div class="card-body" data-aos="fade-up" data-aos-duration="2000">
         <div class="col">
           <h4 class="display-4 bg-light text-dark text-center">Keahlian Saya</h4>
         </div>
       </div>
       <div class="container">
         <div class="row justify-content-center mx-5">
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
             <div class="box-content text-center">
               <div class="card d-flex align-items-center">
                 <img class="img-thumbnail" width="50%" src="img/html-5.svg" alt="HTML 5" />
@@ -151,7 +152,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-down" data-aos-duration="2000">
             <div class="box-content text-center">
               <div class="card d-flex align-items-center">
                 <img class="img-thumbnail" width="50%" src="img/css.svg" alt="CSS 3" />
@@ -164,7 +165,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-right" data-aos-duration="2000">
             <div class="box-content text-center">
               <div class="card d-flex align-items-center">
                 <img class="img-thumbnail" width="50%" src="img/bootstrap.svg" alt="bootstrap" />
@@ -177,7 +178,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up-right" data-aos-duration="2000"> 
             <div class="box-content text-center">
               <div class="card d-flex align-items-center">
                 <img class="img-thumbnail" width="50%" src="img/javascript.svg" alt="Javascript" />
@@ -190,7 +191,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-down" data-aos-duration="2000">
             <div class="box-content text-center">
               <div class="card d-flex align-items-center">
                 <img class="img-thumbnail" width="50%" src="img/php.svg" alt="PHP" />
@@ -203,7 +204,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up-left" data-aos-duration="2000">
             <div class="box-content text-center">
               <div class="card d-flex align-items-center">
                 <img class="img-thumbnail" width="50%" src="img/react.svg" alt="ReactJS" />
@@ -216,7 +217,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-duration="2000">
             <div class="box-content text-center">
               <div class="card d-flex align-items-center">
                 <img class="img-thumbnail" width="50%" src="img/mysql.svg" alt="MySQL" />
@@ -235,7 +236,7 @@
 
     <!-- Project -->
     <section id="project">
-      <div class="card-body">
+      <div class="card-body" data-aos="fade-up" data-aos-duration="2000">
         <div class="col">
           <h4 class="display-4 bg-light text-dark text-center">
             Project and Mini Project
@@ -245,17 +246,17 @@
 
       <div class="container">
         <div class="card modal_exp">
-          <div class="card-header">
+          <div class="card-header" data-aos="fade-down-right" data-aos-duration="2000">
             <h4 class="display-5 text-dark text-justify">
               1. [Mini Project] Toko Helm
             </h4>
           </div>
           <div class="row">
-            <div class="col-md-4 pt-4 pl-4">
+            <div class="col-md-4 pt-4 pl-4" data-aos="zoom-out" data-aos-duration="2000">
               <img class="img-thumbnail" width="100%" src="img/logo.png" alt="tokohelm" />
             </div>
             <div class="col">
-              <div class="card-body">
+              <div class="card-body" data-aos="fade-left" data-aos-duration="2000">
                 <p class="card-text">Ini adalah aplikasi pertama yang saya buat untuk menyelesaikan salah satu tugas
                   matakuliah di kampus. Aplikasi ini menggunakan bahasa pemrograman PHP native untuk backend, database
                   MySQL dan
@@ -263,10 +264,10 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" data-aos="flip-down" data-aos-duration="2000">
             <h6 class="lead card-body">Fitur User</h6>
           </div>
-          <div class="row pl-5">
+          <div class="row pl-5" data-aos="zoom-in" data-aos-duration="2000">
             <div class="col-md-4">
               <div class="container1">
                 <figure>
@@ -286,10 +287,10 @@
               </div>
             </div>
           </div>
-          <div class="row">
+          <div class="row" data-aos="flip-down" data-aos-duration="2000">
             <h6 class="lead card-body">Fitur Admin</h6>
           </div>
-          <div class="row pl-5">
+          <div class="row pl-5" data-aos="zoom-in" data-aos-duration="2000">
             <div class="col-md-4">
               <div class="container1">
                 <figure>
@@ -349,17 +350,17 @@
         </div>
 
         <div class="card mt-3 modal_exp">
-          <div class="card-header">
+          <div class="card-header" data-aos="fade-up" data-aos-duration="2000">
             <h4 class="display-5 text-dark text-justify">
               2. [Project] Penomoran Surat Otomatis
             </h4>
           </div>
           <div class="row">
-            <div class="col-md-4 pt-4 pl-4">
+            <div class="col-md-4 pt-4 pl-4" data-aos="zoom-out" data-aos-duration="2000">
               <img class="img-thumbnail" width="100%" src="img/logo2.JPG" alt="Arsip" />
             </div>
             <div class="col">
-              <div class="card-body">
+              <div class="card-body" data-aos="fade-left" data-aos-duration="2000">
                 <p class="card-text">Ini merupakan aplikasi yang kami bangun saat menjalani program magang di Badan
                   Karantina Pertanian. Masalah yang diangkat yaitu dari penomoran surat yang masih manual menggunakan
                   Ms. Excell. Aplikasi ini menggunakan PHP native untuk backend, database MySQL dan bootstrap untuk UI
@@ -367,10 +368,10 @@
               </div>
             </div>
           </div>
-          <div class="row text-justify">
+          <div class="row text-justify" data-aos="flip-up" data-aos-duration="2000">
             <h6 class="lead card-body">Fitur</h6>
           </div>
-          <div class="row pl-5">
+          <div class="row pl-5" data-aos="zoom-in-down" data-aos-duration="2000">
             <div class="col-md-4">
               <div class="container1">
                 <figure>
@@ -429,17 +430,17 @@
         </div>
 
         <div class="card mt-3">
-          <div class="card-header">
+          <div class="card-header" data-aos="fade-up" data-aos-duration="2000">
             <h4 class="display-5 text-dark text-justify">
               3. [Mini Project] Review Film dan Game
             </h4>
           </div>
           <div class="row">
-            <div class="col-md-4 pt-4 pl-4">
+            <div class="col-md-4 pt-4 pl-4" data-aos="fade-down-right" data-aos-duration="2000">
               <img class="img-thumbnail" width="100%" src="img/logo3.png" alt="Movie&Game Review" />
             </div>
             <div class="col">
-              <div class="card-body">
+              <div class="card-body" data-aos="fade-left" data-aos-duration="2000">
                 <p class="card-text">Aplikasi yang dibangun untuk menyelesaikan Final Project bootcamp di Sanbercode.
                   Aplikasi ini dibangun menggunakan React Js dan material UI. Aplikasi ini sudah di deploy menggunakan
                   netlify dan dapat dijalankan dengan menekan tombol demo.</p>
@@ -486,6 +487,10 @@
     }
   </script>
   <script src="https://kit.fontawesome.com/521d51b5f9.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
